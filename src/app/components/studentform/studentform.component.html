@@ -1,0 +1,10 @@
+
+  <div>Student Form</div>
+  <div>
+    <form (ngSubmit)="formSubmit()">
+      <div> 
+          <input type="text" [(ngModel)]="student.name" name="name">
+      </div>
+      <input type="submit" value="save" />
+    </form>
+  </div>

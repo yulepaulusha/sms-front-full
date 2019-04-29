@@ -1,0 +1,18 @@
+<div>
+  <table border="1">
+    <thead>
+      <th>ID</th>
+      <th>NAME</th>
+      <th>OPERRATIONS</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let s of students">
+        <td>{{s.id}}</td>
+        <td>{{s.name}}</td>
+        <td><button (click)="deleteStudent(s)">Delete</button></td>
+        <td><button (click)="updateStudent(s)">Edit</button></td>
+      </tr>
+    </tbody>
+  </table>
+  <button (click)="createStudent()">New Student</button>
+</div>
